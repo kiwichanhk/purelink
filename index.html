@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匯潔服務 PureLink Services - 您的空間完美成就者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --navy: #001F3F;
+        }
+
+        .bg-navy {
+            background-color: var(--navy);
+        }
+
+        .text-navy {
+            color: var(--navy);
+        }
+
+        .border-navy {
+            border-color: var(--navy);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 31, 63, 0.6), rgba(0, 31, 63, 0.4)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+            border: 1px solid #f3f4f6;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--navy);
+            box-shadow: 0 15px 35px rgba(0, 31, 63, 0.08);
+        }
+
+        .process-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--navy);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--navy);
+        }
+
+        .special-engineering {
+            background: linear-gradient(to right, #ffffff, #f0f4f8);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- 導航欄 -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="flex flex-col border-l-2 border-navy pl-3">
+                    <span class="text-2xl font-bold text-navy tracking-tighter leading-none">PureLink</span>
+                    <span class="text-sm font-medium text-navy tracking-[0.2em]">匯潔服務</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-10 font-medium items-center">
+                <a href="#home" class="text-navy hover:opacity-70 transition">首頁</a>
+                <a href="#services" class="text-navy hover:opacity-70 transition">核心服務</a>
+                <a href="#engineering" class="text-navy hover:opacity-70 transition">專項工程</a>
+                <a href="#about" class="text-navy hover:opacity-70 transition">品牌理念</a>
+                <a href="#contact" class="bg-navy text-white px-8 py-2.5 rounded hover:bg-blue-900 transition shadow-md">立即報價</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-navy"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄區 -->
+    <section id="home" class="hero-gradient h-screen flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6">
+            <div class="inline-block border-l-4 border-white pl-4 mb-6 text-left">
+                <p class="text-lg md:text-xl tracking-widest uppercase mb-2">PureLink Services</p>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">從小家細節，到大場視野<br>匯潔為您成就完美空間</h1>
+            </div>
+            <div class="mt-10 flex flex-col md:flex-row justify-center gap-6">
+                <a href="#services" class="bg-white text-navy font-bold py-4 px-12 rounded hover:bg-gray-100 transition">探索服務項目</a>
+                <a href="https://api.whatsapp.com/send/?phone=85267128323&text&type=phone_number&app_absent=0" target="_blank" class="btn-outline text-white font-bold py-4 px-12 rounded">免費現場評估</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心服務 -->
+    <section id="services" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-navy font-bold tracking-[0.2em] mb-2 uppercase">Core Services</h2>
+                <h3 class="text-3xl md:text-4xl font-bold">全方位清潔解決方案</h3>
+                <div class="w-16 h-1 bg-navy mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- 餐廳清潔 -->
+                <div class="service-card bg-white p-10 rounded-xl">
+                    <div class="w-16 h-16 bg-navy text-white flex items-center justify-center rounded-lg mb-8 shadow-lg">
+                        <i class="fas fa-utensils text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-navy">餐飲衛生：餐廳專項</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">針對餐飲業嚴苛的食安衛生標準，深層清除積壓油垢，協助貴司輕鬆通過食環署等各項執照驗收，守護品牌商譽。</p>
+                    <ul class="space-y-3 text-sm font-medium mt-auto border-t pt-6">
+                        <li><span class="process-dot"></span> 廚房排煙系統及風機深度去油</li>
+                        <li><span class="process-dot"></span> 樓面桌椅、地面防滑及全面消毒</li>
+                        <li><span class="process-dot"></span> 隔油池清理及醫療級病媒防治</li>
+                    </ul>
+                </div>
+
+                <!-- 商業 -->
+                <div class="service-card bg-white p-10 rounded-xl">
+                    <div class="w-16 h-16 bg-navy text-white flex items-center justify-center rounded-lg mb-8 shadow-lg">
+                        <i class="fas fa-city text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-navy">大場視野：商業空間</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">為企業總部、大型商場、學校及醫療機構提供高標準的日常或定期維護，以宏觀視野管理大型場域的環境質感。</p>
+                    <ul class="space-y-3 text-sm font-medium mt-auto border-t pt-6">
+                        <li><span class="process-dot"></span> 寫字樓全層定期深度大清洗</li>
+                        <li><span class="process-dot"></span> 商業大理石打磨、晶化護理</li>
+                        <li><span class="process-dot"></span> 地氈深度抽洗及防污保護塗層</li>
+                    </ul>
+                </div>
+
+                <!-- 家居 -->
+                <div class="service-card bg-white p-10 rounded-xl">
+                    <div class="w-16 h-16 bg-navy text-white flex items-center justify-center rounded-lg mb-8 shadow-lg">
+                        <i class="fas fa-couch text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-navy">小家細節：精緻家居</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">秉承「從小家細節」出發的理念，為您的私人空間進行細膩入微的潔淨工程，讓居家環境重現最初的舒適與純淨。</p>
+                    <ul class="space-y-3 text-sm font-medium mt-auto border-t pt-6">
+                        <li><span class="process-dot"></span> 裝修後/搬遷入伙深層大掃除</li>
+                        <li><span class="process-dot"></span> 廚衛去污除霉及防霉長效處理</li>
+                        <li><span class="process-dot"></span> 梳化、床褥深層除蟎抽污服務</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 獨立專項工程區塊 -->
+    <section id="engineering" class="py-24 special-engineering border-y border-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <h2 class="text-navy font-bold tracking-[0.2em] mb-4 uppercase text-sm">Specialized Engineering</h2>
+                    <h3 class="text-4xl font-bold mb-8 text-navy leading-tight">超越清潔，<br>科學化的專項環境工程</h3>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        匯潔服務 (PureLink) 引進專業檢測儀器與醫療級施工設備，解決肉眼看不見的環境隱患。我們不只是清潔工，更是您的環境健康工程顧問。
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 text-navy"><i class="fas fa-shield-virus text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg text-navy">專業除甲醛工程</h4>
+                                <p class="text-gray-500 text-sm">採用日本光觸媒及專業霧化技術，確保室內空氣質量符合安全標準。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 text-navy"><i class="fas fa-bug text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg text-navy">綜合蟲害預防管理</h4>
+                                <p class="text-gray-500 text-sm">針對商業及家居環境，提供科學化的物理與化學防治方案，杜絕蟲害滋生。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 text-navy"><i class="fas fa-wind text-2xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg text-navy">冷氣系統抗菌清洗</h4>
+                                <p class="text-gray-500 text-sm">深度清洗冷氣散熱翅片、風輪及隔塵網，提升製冷效能並淨化空氣。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <a href="#contact" class="bg-navy text-white px-10 py-4 rounded font-bold shadow-xl hover:bg-black transition">諮詢工程細節</a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <!-- 已換回上一版本的專業施工圖片 -->
+                    <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="專業清潔與工程施工" class="rounded-2xl shadow-3xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-2xl rounded-lg hidden md:block border-l-4 border-navy">
+                        <p class="text-navy font-bold">醫療級認證藥劑</p>
+                        <p class="text-gray-400 text-xs mt-1">對人體及寵物 100% 安全</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品牌理念 -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="精緻空間成果" class="rounded-lg shadow-2xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-navy text-sm font-bold tracking-[0.3em] mb-4 uppercase">About PureLink</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">匯聚專業力量，連結純淨空間</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        匯潔服務 (PureLink Services) 致力於打破清潔行業的固有印象。我們深信，清潔不僅是表面的塵埃去除，更是一種對空間質感的追求。我們以極致的細節控管與廣闊的服務視野，為每一位客戶量身打造完美環境。
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="border-l-2 border-gray-100 pl-4">
+                            <h4 class="font-bold text-navy text-lg mb-1">專業培訓</h4>
+                            <p class="text-xs text-gray-500">所有員工定期接受最新的衛生及工程標準課程。</p>
+                        </div>
+                        <div class="border-l-2 border-gray-100 pl-4">
+                            <h4 class="font-bold text-navy text-lg mb-1">透明報價</h4>
+                            <p class="text-xs text-gray-500">承諾現場評估後，提供明碼實價的詳細工程清單。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section id="contact" class="py-24 bg-navy text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">成就完美空間，<br>從今天開始。</h2>
+                        <p class="text-blue-200 mb-10 leading-relaxed opacity-80 text-sm">無論是精緻的家居細節，還是大型的商業視野，匯潔專業團隊隨時為您服務。請留下聯絡資料，我們將在短時間內回覆。</p>
+                        
+                        <div class="space-y-6 text-sm">
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-phone-alt w-5 text-blue-300"></i>
+                                <span>+852 9322 3432</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-envelope w-5 text-blue-300"></i>
+                                <span>info@purelink.com.hk</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-map-marker-alt w-5 text-blue-300"></i>
+                                <span>荔枝角長順街15號D2 Place Two 2樓205-211A鋪</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-2xl">
+                        <form class="space-y-4 text-gray-800">
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">聯絡姓名</label>
+                                <input type="text" class="w-full p-3 bg-gray-50 border border-gray-100 rounded focus:ring-1 focus:ring-navy focus:bg-white outline-none transition-all" placeholder="陳先生 / Ms. Wong">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">聯絡電話</label>
+                                <input type="tel" class="w-full p-3 bg-gray-50 border border-gray-100 rounded focus:ring-1 focus:ring-navy focus:bg-white outline-none transition-all" placeholder="8 位數香港電話">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">查詢項目</label>
+                                <select class="w-full p-3 bg-gray-50 border border-gray-100 rounded focus:ring-1 focus:ring-navy focus:bg-white outline-none transition-all">
+                                    <option>餐廳專項清潔 (餐飲衛生)</option>
+                                    <option>大場視野 (商業空間)</option>
+                                    <option>小家細節 (家居大掃除)</option>
+                                    <option>專項環境工程 (甲醛/蟲害/冷氣)</option>
+                                </select>
+                            </div>
+                            <button class="w-full bg-navy text-white font-bold py-4 rounded hover:bg-black transition-all shadow-lg active:scale-95">索取免費建議書</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-gray-50">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <span class="text-xl font-bold text-navy tracking-tighter">PureLink Services 匯潔服務</span>
+                <p class="text-xs text-gray-400 mt-1 uppercase tracking-widest">Detail is everything.</p>
+            </div>
+            <div class="text-[10px] text-gray-400 font-medium tracking-widest text-center md:text-right">
+                &copy; 2024 PURELINK SERVICES LIMITED. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="https://api.whatsapp.com/send/?phone=85267128323&text&type=phone_number&app_absent=0" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+</body>
+</html>
